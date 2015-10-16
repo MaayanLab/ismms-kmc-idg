@@ -1,4 +1,11 @@
-<div id="nav" class="navbar navbar-default">
-    <div class="container">
+<div ng-controller="NavController">
+    <div id="nav" class="container-full">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="category in categories" class="dropdown">
+                    <a href="{{category.url}}">{{category.title}}</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

@@ -1,20 +1,31 @@
-var mod = angular.module('app', [
-    'ngRoute'
+angular.module('app', [
+    'ngRoute',
+    'about',
+    'nav',
+    'tools'
 ]);
 
-mod.config(['$routeProvider', function ($routeProvider) {
+angular.module('app').config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl: 'app/layout/main-container.html'
+            templateUrl: 'app/pages/landing/landing.html'
         }).
-        /* Default */
+        when('/about', {
+            templateUrl: 'app/pages/about/about.html'
+        }).
+        when('/publications', {
+            templateUrl: 'app/pages/publications/publications.html'
+        }).
+        when('/tools', {
+            templateUrl: 'app/pages/tools/tools.html'
+        }).
         otherwise({
             redirectTo: '/'
         });
-}
+    }
 ]);
 
-mod.run(function ($rootScope, $location, $anchorScroll) {
+angular.module('app').run(function ($rootScope, $location, $anchorScroll) {
     $rootScope.$on('$routeChangeSuccess', function (newRoute, oldRoute) {
         if ($location.hash()) {
             setTimeout(function () {

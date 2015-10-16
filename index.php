@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en" ng-app="app">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -23,7 +23,9 @@
     <link rel="shortcut icon" href="">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="app/styles/common.css">
+	<link rel="stylesheet" href="styles/common.css">
+	<link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <!-- Google Analytics -->
     <!-- TODO -->
@@ -56,6 +58,10 @@
 	<!-- ************************ Application ************************ -->
 
 	<!-- Routes -->
+	<script type="text/javascript" src="app/nav/nav.js"></script>
+	<script type="text/javascript" src="app/pages/about/about.js"></script>
+	<script type="text/javascript" src="app/pages/publications/publications.js"></script>
+	<script type="text/javascript" src="app/pages/tools/tools.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
 </body>
 </html>
