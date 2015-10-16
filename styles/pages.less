@@ -1,0 +1,71 @@
+/*
+ * Stylesheet for individual pages.
+ */
+
+
+@import "variables.less";
+
+
+.page {
+    h1 {
+        border-bottom: 1px solid @color-gray-light;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .section {
+        h3 {
+            margin-top: 0;
+        }
+        img {
+            width: 20%;
+        }
+        .description-wrapper {
+            float: right;
+            width: 80%;
+            .description {
+                font-size: 16px;
+                padding-left: 20px;
+            }
+        }
+        a {
+            color: black;
+            transition: @transition-fade-in;
+            &:hover {
+                background-color: rgba(158,158,158,0.2);
+            }
+            &:hover,
+            &:focus,
+            &:active,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+#landing-page {
+    p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
+
+
+#publications-page {
+    h4 {
+        margin-bottom: 5px;
+    }
+    .publication {
+        &>li {
+            border-bottom: 1px solid @color-gray-light;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+#tools-page {
+}

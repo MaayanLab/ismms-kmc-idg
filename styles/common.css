@@ -8,13 +8,36 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 100px;
+  margin-bottom: 220px;
   /* bottom = footer height */
 }
 #footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 220px;
   width: 100%;
+}
+#wrapper {
+  padding-bottom: 30px;
+}
+/* Generic class and tag selectors.
+ * -------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #0262c2;
+}
+a:hover {
+  color: #0262c2;
+}
+.clear {
+  clear: both;
 }

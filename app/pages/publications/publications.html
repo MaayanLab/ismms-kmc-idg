@@ -1,3 +1,26 @@
-<div class="container page">
-    <h1>Publications</h1>
+<div ng-controller="PublicationsController">
+    <div id="publications-page" class="container page">
+        <h1>Publications</h1>
+        <ul ng-repeat="publication in publications" class="list-unstyled publication">
+            <li>
+                <div>
+                    <h4>
+                        <a href="{{ getPubMedUrl(publication.pubMedId) }}" target="_blank">{{ publication.title }}</a>
+                    </h4>
+                    <p>{{ publication.journal }}. {{ publication.authors }}.</p>
+                </div>
+                <ul class="list-inline">
+                    <li>
+                        <a href="{{ getPubMedRelatedUrl(publication.pubMedId) }}" target="_blank">Related articles - PubMed</a>
+                    </li>
+                    <li>
+                        <a href="{{ getGoogleScholarRelatedUrl(publication.pubMedId) }}" target="_blank">Related articles - Google Scholar</a>
+                    </li>
+                    <li>
+                        <a href="{{ getGoogleScholarCitedByUrl(publication.pubMedId) }}" target="_blank">Cited by - Google Scholar</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>

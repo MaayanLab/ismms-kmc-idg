@@ -1,3 +1,54 @@
+/*
+ * Stylesheet for nav.
+ */
+
+
+@import "variables.less";
+
+
 #nav {
-    background-color: red;
+    background-color: @color-primary;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    color: white;
+    a {
+        color: white;
+        font-family: @font-family-accent;
+        transition: @transition-fade-in;
+        &:hover,
+        &:focus,
+        &:active {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+        a {
+            font-weight: bold;
+        }
+    }
+    li {
+        a {
+            font-size: 18px;
+            font-weight: 300;
+            &:hover,
+            &:focus,
+            &:active {
+                background: @color-primary-dark;
+                background-color: rgba(158, 158, 158, 0.2);
+            }
+        }
+    }
+    #title {
+        p {
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+    #menu {
+        background-color: @color-primary-medium;
+        background: -webkit-linear-gradient(@color-primary-medium, @color-primary);
+        background: linear-gradient(@color-primary-medium, @color-primary);
+    }
 }

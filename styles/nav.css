@@ -1,3 +1,45 @@
+/*
+ * Stylesheet for nav.
+ */
 #nav {
-  background-color: red;
+  background-color: #1976d2;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  color: white;
+}
+#nav a {
+  color: white;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#nav a:hover,
+#nav a:focus,
+#nav a:active {
+  color: white;
+  text-decoration: none;
+}
+#nav h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+#nav h1 a {
+  font-weight: bold;
+}
+#nav li a {
+  font-size: 18px;
+  font-weight: 300;
+}
+#nav li a:hover,
+#nav li a:focus,
+#nav li a:active {
+  background: #0143a3;
+  background-color: rgba(158, 158, 158, 0.2);
+}
+#nav #title p {
+  font-size: 20px;
+  font-weight: 200;
+}
+#nav #menu {
+  background-color: #3367d6;
+  background: -webkit-linear-gradient(#3367d6, #1976d2);
+  background: linear-gradient(#3367d6, #1976d2);
 }

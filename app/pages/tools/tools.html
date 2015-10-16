@@ -1,8 +1,19 @@
 <div ng-controller="ToolController">
-    <div class="container page">
+    <div id="tools-page" class="container page">
         <h1>Tools</h1>
-        <ul ng-repeat="tool in tools">
-            <li>{{ tool.name }}</li>
+        <ul ng-repeat="tool in tools" class="list-unstyled">
+            <li class="section">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200">
+                <div class="description-wrapper">
+                    <div class="description">
+                        <h3>
+                            <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>
+                        </h3>
+                        <p>{{ tool.description }}</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
         </ul>
     </div>
 </div>

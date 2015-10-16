@@ -1,0 +1,47 @@
+/*
+ * Stylesheet for individual pages.
+ */
+.page h1 {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.page .section h3 {
+  margin-top: 0;
+}
+.page .section img {
+  width: 20%;
+}
+.page .section .description-wrapper {
+  float: right;
+  width: 80%;
+}
+.page .section .description-wrapper .description {
+  font-size: 16px;
+  padding-left: 20px;
+}
+.page .section a {
+  color: black;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.page .section a:hover {
+  background-color: rgba(158, 158, 158, 0.2);
+}
+.page .section a:hover,
+.page .section a:focus,
+.page .section a:active,
+.page .section a:visited {
+  text-decoration: none;
+}
+#landing-page p {
+  font-size: 18px;
+  font-weight: 200;
+}
+#publications-page h4 {
+  margin-bottom: 5px;
+}
+#publications-page .publication > li {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}

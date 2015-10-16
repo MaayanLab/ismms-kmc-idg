@@ -1,7 +1,9 @@
 angular.module('app', [
     'ngRoute',
     'about',
+    'caseStudies',
     'nav',
+    'publications',
     'tools'
 ]);
 
@@ -10,8 +12,12 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
         when('/', {
             templateUrl: 'app/pages/landing/landing.html'
         }).
+
         when('/about', {
             templateUrl: 'app/pages/about/about.html'
+        }).
+        when('/case-studies', {
+            templateUrl: 'app/pages/case-studies/case-studies.html'
         }).
         when('/publications', {
             templateUrl: 'app/pages/publications/publications.html'
@@ -19,6 +25,7 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
         when('/tools', {
             templateUrl: 'app/pages/tools/tools.html'
         }).
+
         otherwise({
             redirectTo: '/'
         });

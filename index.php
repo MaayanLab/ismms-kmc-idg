@@ -23,7 +23,12 @@
     <link rel="shortcut icon" href="">
 
 	<!-- CSS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+
 	<link rel="stylesheet" href="styles/common.css">
+	<link rel="stylesheet" href="styles/pages.css">
 	<link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
 
@@ -52,7 +57,6 @@
 
 	<script src="lib/underscore/underscore.js"></script>
 
-	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
 	
 	<!-- ************************ Application ************************ -->
@@ -60,6 +64,7 @@
 	<!-- Routes -->
 	<script type="text/javascript" src="app/nav/nav.js"></script>
 	<script type="text/javascript" src="app/pages/about/about.js"></script>
+	<script type="text/javascript" src="app/pages/case-studies/case-studies.js"></script>
 	<script type="text/javascript" src="app/pages/publications/publications.js"></script>
 	<script type="text/javascript" src="app/pages/tools/tools.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>

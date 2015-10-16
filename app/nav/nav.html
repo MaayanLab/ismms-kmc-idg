@@ -1,11 +1,21 @@
 <div ng-controller="NavController">
-    <div id="nav" class="container-full">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li ng-repeat="category in categories" class="dropdown">
-                    <a href="{{category.url}}">{{category.title}}</a>
-                </li>
-            </ul>
+    <div id="nav">
+        <div class="container-full">
+            <div id="title" class="container">
+                <h1>
+                    <a href="#/">Icahn School of Medicine at Mount Sinai</a>
+                </h1>
+                <p>Illuminating the Druggable Genome Knowledge Management Center</p>
+            </div>
+        </div>
+        <div id="menu" class="container-full">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="category in categories" class="dropdown">
+                        <a href="{{category.url}}">{{category.title}}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
