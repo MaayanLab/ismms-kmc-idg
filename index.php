@@ -39,7 +39,7 @@
         <div ng-include="'app/nav/nav.html'"></div>
 
         <!-- ng-view is used rather than ng-include to handle routing. -->
-        <div id="content-wrapper" class="container" ng-view></div>
+        <div class="container-full" ng-view></div>
     </div>
 
     <div ng-include="'app/footer/footer.html'"></div>

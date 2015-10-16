@@ -1,4 +1,4 @@
-angular.module('nav', []).controller('NavController', ['$scope', '$element', function($scope, $element) {
+angular.module('nav', []).controller('NavController', ['$scope', function($scope) {
 
     $scope.categories = [
         {
